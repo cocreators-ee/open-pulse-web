@@ -1,0 +1,41 @@
+$blue-dark: #141D68;
+$blue-deep: #0B0E3A;
+$blue-vibrant: #1F2C9A;
+$blue-bright: #283ED5;
+
+$text-light: #E0F2FF;
+$text-link: #3A8DFF;
+
+$accent: #00FFC8;
+$accent-high: #ff4c5a;
+$accent-low: #6AEF8A;
+
+$border-color: #3B5AFF;
+$border-light: #638BFF;
+
+$spacing-1: 0.5rem;
+$spacing-2: 0.75rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 2rem;
+$spacing-6: 2.5rem;
+$spacing-7: 3rem;
+$spacing-8: 4rem;
+
+$radius-sm: 0.5rem;
+$radius-md: 1rem;
+$radius-lg: 2.5rem;
+
+$desktop-width: 41rem;
+
+@mixin mobile {
+  @media (max-width: #{calc($desktop-width - 1px)}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
